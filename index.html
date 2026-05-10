@@ -949,7 +949,7 @@ function renderStatsScreen(){
           <span>${deck.icon} ${deck.name} — ${mastered}/${total} mastered (${all} total)</span>
           <button onclick="resetDeck('${deck.id}')" style="font-size:11px;padding:3px 8px;border:1px solid #ddd;border-radius:6px;background:white;color:#888;cursor:pointer;">Reset</button>
         </div>
-        <table><thead><tr><th>English</th><th>French</th><th>Plural</th><th>✓</th><th>✗</th><th>Streak</th></tr></thead><tbody>`;
+        <table><thead><tr><th>Spanish</th><th>French</th><th>Plural</th><th>✓</th><th>✗</th><th>Streak</th></tr></thead><tbody>`;
       unlockedWords(deck).forEach((w,i)=>{
         const ws=getWS(deck.id,i);
         const st=ws.streak>=5?`<span class="mastered-badge">mastered</span>`:ws.streak>0?`<span class="streak-badge">${ws.streak}</span>`:`<span style="color:#bbb">new</span>`;
